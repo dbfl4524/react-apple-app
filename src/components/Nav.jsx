@@ -30,7 +30,7 @@ const Nav = () => {
   };
 
   return (
-    <NavWrapper show={show}>
+    <NavWrapper $show={show}>
       <Logo>
         <img
           alt="logo"
@@ -99,7 +99,7 @@ const NavWrapper = styled.nav`
   right: 0;
   height: 70px;
   background-color: ${(props) =>
-    props.show === "true" ? "#000000" : "#000000"};
+    props.$show === "true" ? "#000000" : "#000000"};
   display: flex;
   justify-content: space-between;
   align-items: center;
